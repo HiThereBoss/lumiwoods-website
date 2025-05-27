@@ -7,16 +7,16 @@ import Contact from './components/Contact'
 function App() {
 
   return (
-    <>
+    <div className='flex flex-col bg-gradient-to-r from-primary to-primary'>
      <Header />
-      <div className='w-full h-screen bg-slate-900'>
+      <div className='w-full'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>
-    </>
+    </div>
   )
 }
 

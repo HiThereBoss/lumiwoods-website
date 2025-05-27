@@ -1,6 +1,10 @@
+import Hero from "./Hero"
+
 function Home() {
   return (
-    <div>Home</div>
+    <div className='flex flex-col pb-100'>
+      <Hero />
+    </div>
   )
 }
 
