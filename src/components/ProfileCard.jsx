@@ -1,18 +1,19 @@
-import React from 'react'
-
-function ProfileCard({ name, bio, image }) {
+function ProfileCard({ name, bio, image, style }) {
   return (
-    <div className='flex flex-row p-8 lg:mx-55 md:mx-20 sm:mx-10 items-center'>
-        <img 
+    <div className='opacity-0 flex flex-col my-5 mx-10 w-[300px] items-center animate-fade-in'
+         style={style}>
+        <div className="h-[200px] w-full flex items-center justify-center p-2">
+            <img 
             src='./src/assets/images/logo.png' 
-            alt='Profile Image' 
-            className='min-w-[200px] h-[200px] object-cover'
-        />
-        <div className='h-full ml-8'>
-            <h3 className='text-custom-blue font-extrabold text-[30px] font-main-bold'>
+            alt={`${name}'s profile`}
+            className='h-full object-cover'
+            />
+        </div>
+        <div className='w-full mt-5 px-3'>
+            <h3 className='text-custom-blue text-center font-extrabold text-[30px] font-main-bold'>
                 {name}
             </h3>
-            <p className='text-custom-blue text-[15px] font-main'>
+            <p className='text-[15px] mt-3 text-center font-main'>
                 {bio}
             </p>
         </div>

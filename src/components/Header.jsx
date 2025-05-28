@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+
+import NavLink from './NavLink.jsx'
 
 function Header() {
   return (
@@ -10,13 +11,13 @@ function Header() {
         <nav>
           <ul className='flex space-x-4 mt-3'>
             <li>
-              <Link to='/' className='text-custom-blue hover:text-orange-400 transition-colors duration-300'>Home</Link>
+              <NavLink to='/' text='Home' />
             </li>
             <li>
-              <Link to='/about' className='text-custom-blue hover:text-orange-400 transition-colors duration-300'>About</Link>
+              <NavLink to='/about' text='About' />
             </li>
             <li>
-              <Link to='/contact' className='text-custom-blue hover:text-orange-400 transition-colors duration-300'>Contact</Link>
+              <NavLink to='/contact' text='Contact' />
             </li>
           </ul>
         </nav>

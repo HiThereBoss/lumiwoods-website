@@ -4,9 +4,22 @@
     --color-primary: #f7f4e9;
     --color-secondary: #d0e4f3;
     --color-custom-blue: #232f61;
+    --color-accent: #ff4e4e;
 
     --font-main: 'Poppins', sans-serif;
     --font-main-bold: 'Poppins Bold', sans-serif;
+
+
+    --animate-fade-in: fade-in 0.5s ease-in both;
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 }
 
 .test {
