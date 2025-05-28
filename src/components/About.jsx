@@ -7,7 +7,7 @@ function About() {
       <div>
         <h1 className="text-4xl text-custom-blue text-center font-bold mb-8">About Us</h1>
       </div>
-      <div className="flex flex-row justify-center">
+      <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
         {profiles.map((profile, idx) => (
           <ProfileCard
             key={profile.name}

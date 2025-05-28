@@ -7,7 +7,7 @@ import Contact from './components/Contact'
 function App() {
 
   return (
-    <div className='flex flex-col bg-gradient-to-r from-primary to-primary'>
+    <div className='flex flex-col bg-gradient-to-r bg-primary'>
      <Header />
       <div className='w-full'>
         <Routes>

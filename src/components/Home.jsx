@@ -1,14 +1,13 @@
 import Hero from "./Hero"
 import Info from "./Info"
-import Offer from "./Offer"
 import Preview from "./Preview"
 
 function Home() {
   return (
-    <div className='flex flex-col pb-100'>
+    <div className='flex flex-col lg:h-[90vh] lg:snap-y lg:snap-mandatory lg:overflow-y-scroll'
+    >
       <Hero />
       <Info />
-      <Offer />
       <Preview />
       
     </div>

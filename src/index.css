@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+    box-sizing: border-box;
+}
+
 @theme {
     --color-primary: #f7f4e9;
     --color-secondary: #d0e4f3;
@@ -8,7 +12,6 @@
 
     --font-main: 'Poppins', sans-serif;
     --font-main-bold: 'Poppins Bold', sans-serif;
-
 
     --animate-fade-in: fade-in 0.5s ease-in both;
 

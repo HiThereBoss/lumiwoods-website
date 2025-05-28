@@ -3,10 +3,10 @@ import NavLink from './NavLink.jsx'
 
 function Header() {
   return (
-     <div className='w-full flex items-center justify-center-safe p-4'>
+     <div className='w-full h-[10vh] flex items-center justify-center p-4'>
         <img 
           src='./src/assets/images/logo.png'
-          className='text-custom-blue text-3xl absolute left-15 top-5 w-[60px] h-[60px] object-cover'
+          className='text-custom-blue text-3xl absolute left-5 lg:left-15 top-5 w-[60px] h-[60px] object-cover'
         />
         <nav>
           <ul className='flex space-x-4 mt-3'>
