@@ -5,7 +5,7 @@ function NavLink({ to, text }) {
     <RouterNavLink
       to={to}
       className={({ isActive }) =>
-        `text-custom-blue transition-all duration-300 hover:font-bold${isActive ? ' font-bold cursor-default pointer-events-none' : ''}`
+        `text-custom-blue transition-all duration-300 hover:font-bold ${isActive ? ' font-bold cursor-default pointer-events-none' : ''}`
       }
     >
       {text}

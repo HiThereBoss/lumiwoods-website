@@ -1,3 +1,5 @@
+import hero from '../assets/images/hero-graphic.png';
+
 function Hero() {
   return (
     <div className='flex flex-col md:flex-row p-8 h-[90vh] pt-30 snap-start'
@@ -13,7 +15,7 @@ function Hero() {
         </div>
         <div>
             <img 
-                src='./src/assets/images/hero-graphic.png' 
+                src={hero}
                 alt='Hero Image' 
                 className='w-[500px] mt-8 md:mt-0 xl:mx-20'
             />

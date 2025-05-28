@@ -1,11 +1,11 @@
-
+import logo from '../assets/images/logo.png'
 import NavLink from './NavLink.jsx'
 
 function Header() {
   return (
      <div className='w-full h-[10vh] flex items-center justify-center p-4'>
         <img 
-          src='./src/assets/images/logo.png'
+          src={logo}
           className='text-custom-blue text-3xl absolute left-5 lg:left-15 top-5 w-[60px] h-[60px] object-cover'
         />
         <nav>

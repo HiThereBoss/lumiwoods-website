@@ -1,10 +1,12 @@
+import logo from '../assets/images/logo.png'
+
 function ProfileCard({ name, bio, image, style }) {
   return (
     <div className='opacity-0 flex flex-col my-5 mx-10 w-[300px] items-center animate-fade-in'
          style={style}>
         <div className="h-[200px] w-full flex items-center justify-center p-2">
             <img 
-            src='./src/assets/images/logo.png' 
+            src={logo}
             alt={`${name}'s profile`}
             className='h-full object-cover'
             />

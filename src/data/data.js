@@ -18,20 +18,22 @@ export const profiles = [
   }
 ];
 
+import placeholder from '../assets/images/logo.png';
+
 export const infoCards = [
   {
     title: "Interactive Gameplay",
     desc: "The gameplay is designed to relax and engage children in a fun way through calming mini-games and in-game rewards that make them feel accomplished.",
-    src: "./src/assets/images/logo.png"
+    src: placeholder
   },
   {
     title: "Progress Tracking",
     desc: "The app allows parents and caregivers to track the child's progress and see how they are responding to the activities. This helps us to tailor the experience to each child's needs and personalise their journey of building emotional resilience.",
-    src: "./src/assets/images/logo.png"
+    src: placeholder
   },
   {
     title: "Soothing soundtracks",
     desc: "The music and nature sounds used in the app help reduce stress and relax the mind of the user. The soundtracks are carefully selected to create a calming atmosphere for the children and patients.",
-    src: "./src/assets/images/logo.png"
+    src: placeholder
   }
 ];
