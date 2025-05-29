@@ -23,17 +23,17 @@ import placeholder from '../assets/images/logo.png';
 export const infoCards = [
   {
     title: "Interactive Gameplay",
-    desc: "The gameplay is designed to relax and engage children in a fun way through calming mini-games and in-game rewards that make them feel accomplished.",
-    src: placeholder
+    desc: "Engaging children through interactive gameplay is a key feature of the ZenKids app. The game is designed to be fun and educational, allowing children to learn about mindfulness and emotional intelligence while playing.",
+    emoji: "🎮",
   },
   {
     title: "Progress Tracking",
-    desc: "The app allows parents and caregivers to track the child's progress and see how they are responding to the activities. This helps us to tailor the experience to each child's needs and personalise their journey of building emotional resilience.",
-    src: placeholder
+    desc: "Track the progress of children as they complete levels and learn new skills. The app provides insights into their emotional growth and mindfulness practices, helping parents and caregivers understand their child's development.",
+    emoji: "📈",
   },
   {
     title: "Soothing soundtracks",
-    desc: "The music and nature sounds used in the app help reduce stress and relax the mind of the user. The soundtracks are carefully selected to create a calming atmosphere for the children and patients.",
-    src: placeholder
+    desc: "Expert proven soothing soundtracks are integrated into the ZenKids app to create a calming atmosphere for children. These soundtracks are designed to enhance the mindfulness experience, helping children relax and focus during gameplay.",
+    emoji: "🎵",
   }
 ];
