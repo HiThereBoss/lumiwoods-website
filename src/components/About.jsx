@@ -1,7 +1,7 @@
 import ProfileCard from "./ProfileCard"
 import { profiles } from "@/data/data"
 
-function About() {
+export default function About() {
   return (
     <div className="pt-12 flex flex-col pb-50">
       <div>
@@ -21,5 +21,3 @@ function About() {
     </div>
   )
 }
-
-export default About

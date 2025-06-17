@@ -7,7 +7,7 @@ function Info() {
     >
         <div className='flex flex-col max-w-5xl mt-10 ml:5 lg:ml-20 xl:max-w-xl xl:justify-center'>
             <p className='text-custom-blue text-[15px] lg:text-[30px] font-main'>
-                At ZenKids, we're on a mission to help children manage stress and anxiety
+                At Lumiwoods, we're on a mission to help children manage stress and anxiety
                 through a science-backed mobile game designed with specific attention to their needs.
             </p>
         </div>
