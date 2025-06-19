@@ -2,7 +2,7 @@ import { useState } from 'react';
 import useTypewriter from '../hooks/useTypewriter';
 import hero from '../assets/images/hero-graphic.png';
 
-function Hero() {
+export default function Hero() {
     const line1 = 'From Wiggles to Zen Giggles—';
     const fullLine2 = "Calm young minds today, and they'll conquer the storms of tomorrow.";
     const typedLine2 = useTypewriter(fullLine2, 80); // 80ms per char
@@ -42,4 +42,3 @@ function Hero() {
     );
 }
 
-export default Hero;

@@ -20,8 +20,12 @@ function Header() {
               <NavLink to='/preview' text='Preview' />
             </li>
             <li>
+              <NavLink to='/forEducators' text='For Educators' />
+            </li>
+            <li>
               <NavLink to='/contact' text='Contact' />
             </li>
+
           </ul>
         </nav>
       </div>
