@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className='flex flex-col bg-gradient-to-r bg-primary'>
-     <Header />
+    <Header />
       <div className='w-full'>
         <Routes>
           <Route path='/' element={<Home />} />

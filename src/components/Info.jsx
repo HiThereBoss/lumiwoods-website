@@ -3,7 +3,7 @@ import InfoCard from "./InfoCard"
 
 function Info() {
   return (
-    <div className='flex flex-col 2xl:flex-row p-8 lg:h-[90vh] justify-center snap-start'
+    <div className='flex flex-col 2xl:flex-row p-8 lg:h-[90vh] justify-center'
     >
         <div className='flex flex-col max-w-5xl mt-10 ml:5 lg:ml-20 xl:max-w-xl xl:justify-center'>
             <p className='text-custom-blue text-[15px] lg:text-[30px] font-main'>

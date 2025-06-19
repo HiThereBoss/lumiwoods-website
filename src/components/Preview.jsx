@@ -3,7 +3,7 @@ import React from 'react'
 export default function Preview() {
     return (
         <div>
-            <div className='flex flex-row p-4 h-[90vh] snap-start'
+            <div className='flex flex-row p-4 h-[90vh]'
         >
                 <div className='max-w-5xl ml-5 md:ml-20 h-full'>
                     <h3 className='text-custom-blue font-extrabold text-[30px] lg:text-[50px] font-main-bold pt-8 mt-2'>

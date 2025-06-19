@@ -4,8 +4,7 @@ import Preview from "./Preview"
 
 function Home() {
   return (
-    <div className='flex flex-col lg:h-[90vh] lg:snap-y lg:snap-mandatory lg:overflow-y-scroll'
-    >
+    <div className='flex flex-col lg:h-[90vh] lg:overflow-y-scroll'>
       <Hero />
       <Info />
       <Preview />
