@@ -1,4 +1,6 @@
 import React from 'react';
+import ProfileCard from "./ProfileCard"
+import { profiles } from "@/data/data"
 
 export default function About() {
   return (
