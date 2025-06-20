@@ -1,4 +1,4 @@
-import bunny from '../assets/images/bunny.png'
+import bunny from '../assets/images/Bunny.png'
 
 function ProfileCard({ name, bio, image, style }) {
     return (
