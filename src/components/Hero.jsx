@@ -5,11 +5,17 @@ import hero from '../assets/images/hero-graphic.png';
 export default function Hero() {
     const line1 = 'From Wiggles to Zen Giggles—';
     const fullLine2 = "Calm young minds today, and they'll conquer the storms of tomorrow.";
-    const typedLine2 = useTypewriter(fullLine2, 80); // 80ms per char
+    const typedLine2 = useTypewriter(fullLine2, 80);
 
     return (
-        <div className="flex flex-col md:flex-row p-8 h-[90vh] pt-30">
-        <div className="max-w-5xl ml-5 lg:ml-30 lg:h-[90vh] flex flex-col">
+        <div
+        className="
+            flex flex-col md:flex-row 
+            items-center justify-between 
+            w-full p-8 h-[90vh] pt-30
+        "
+        >
+        <div className="flex-1 max-w-5xl ml-5 lg:ml-30 flex flex-col">
             <p className="text-custom-blue font-extrabold text-[20px] md:text-[30px] lg:text-[50px] font-main-bold">
             {line1}
             </p>
@@ -23,13 +29,17 @@ export default function Hero() {
             </span>
             </p>
         </div>
-        <div>
+
+        {/* Image stays put on the right */}
+        <div className="flex-shrink-0">
             <img
             src={hero}
             alt="Hero Image"
             className="w-[500px] mt-8 md:mt-0"
             />
         </div>
+
+        {/* Blinking cursor keyframes */}
         <style>
             {`
             @keyframes blink {
@@ -41,4 +51,3 @@ export default function Hero() {
         </div>
     );
 }
-

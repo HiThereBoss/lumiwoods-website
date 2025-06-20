@@ -21,7 +21,7 @@ export const profiles = [
     bio: "Hi, my name's Saahil Gupta, and I'm also a Computer Science student at McMaster University. As the Design Lead for Lumiwoods, I focus on creating a visually appealing and user-friendly experience for our young users. I believe that design plays a crucial role in engaging children and making learning about mindfulness and emotional intelligence enjoyable. My goal is to ensure that Lumiwoods is not only educational but also fun and accessible for kids."
   },
   {
-    name: "Prateek Mahaveer Surana",
+    name: "Pratik Mahaveer Surana",
     bio: "Hi, I'm Prateek Mahaveer Surana, a Computer Science student at McMaster University and a Design team member + Market Researcher for Lumiwoods. I joined Lumiwoods because I believe in the power of technology to make a positive impact on children's mental health. My role involves conducting market research to understand the needs of our target audience and ensuring that our game effectively addresses those needs. I'm excited to contribute to a project that aims to help children learn about mindfulness and emotional intelligence in a fun and engaging way."
   }
 ];
