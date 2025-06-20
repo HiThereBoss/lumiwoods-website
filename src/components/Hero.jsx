@@ -31,11 +31,14 @@ export default function Hero() {
         </div>
 
         {/* Image stays put on the right */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 w-[500px] h-[300px] md:h-[400px] mt-8 md:mt-0">
             <img
-            src={hero}
-            alt="Hero Image"
-            className="w-[500px] mt-8 md:mt-0"
+                src={hero}
+                alt="Hero Image"
+                width={500}
+            height={400}
+            loading="eager"
+            className="w-full h-full object-cover"
             />
         </div>
 
