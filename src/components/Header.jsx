@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="relative w-full h-[10vh] flex items-center justify-between px-4 bg-white shadow-md">
+    <header className="relative w-full h-[10vh] flex items-center justify-between px-4 shadow-md">
       {/* Logo */}
       <img
         src={logo}
