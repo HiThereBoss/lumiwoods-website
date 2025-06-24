@@ -7,10 +7,10 @@ import Preview from './components/Preview'
 import ForEducators from './components/ForEducators'
 import ParentsPortal from './components/ForParents'
 
-function App() {
+export default function App() {
 
   return (
-    <div className='flex flex-col bg-gradient-to-r bg-primary'>
+    <div className='flex flex-col bg-gradient-to-r bg-MG-100'>
     <Header />
       <div className='w-full'>
         <Routes>
@@ -25,5 +25,3 @@ function App() {
     </div>
   )
 }
-
-export default App

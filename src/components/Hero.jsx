@@ -12,17 +12,18 @@ export default function Hero() {
         className="
             flex flex-col md:flex-row 
             items-center justify-between 
-            w-full p-8 h-[90vh] pt-30
+            w-full px-6 py-12 h-auto min-h-[80vh]
+            bg-gradient-to-br from-MG-100 via-MG-50 to-white
         "
         >
         <div className="flex-1 max-w-5xl ml-5 lg:ml-30 flex flex-col">
-            <p className="text-custom-blue font-extrabold text-[20px] md:text-[30px] lg:text-[50px] font-main-bold">
+            <p className="text-MG-800 font-extrabold text-[20px] md:text-[30px] lg:text-[50px] font-main-bold">
             {line1}
             </p>
-            <p className="text-custom-blue text-[15px] md:text-[20px] lg:text-[40px] font-main max-w-4xl">
+            <p className="text-MG-700 text-[15px] md:text-[20px] lg:text-[40px] font-main max-w-4xl">
             {typedLine2}
             <span
-                className="inline-block ml-1"
+                className="inline-block ml-1 text-MG-400"
                 style={{ animation: 'blink 1s step-end infinite' }}
             >
                 |
@@ -38,7 +39,7 @@ export default function Hero() {
                 width={500}
             height={400}
             loading="eager"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-xl shadow-lg"
             />
         </div>
 

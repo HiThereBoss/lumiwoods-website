@@ -1,16 +1,14 @@
 import { NavLink as RouterNavLink } from 'react-router-dom'
 
-function NavLink({ to, text }) {
+export default function NavLink({ to, text }) {
   return (
     <RouterNavLink
       to={to}
       className={({ isActive }) =>
-        `text-custom-blue transition-all duration-300 hover:font-bold ${isActive ? ' font-bold cursor-default pointer-events-none' : ''}`
+        `text-MG-700 hover:text-MG-800 transition-all duration-300 hover:font-bold ${isActive ? 'font-bold cursor-default pointer-events-none border-b-2 border-MG-500' : ''}`
       }
     >
       {text}
     </RouterNavLink>
   )
 }
-
-export default NavLink

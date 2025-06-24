@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="relative w-full h-[10vh] flex items-center justify-between px-4 shadow-md">
+    <header className="relative w-full h-[10vh] flex items-center justify-between px-4 bg-MG-100 text-MG-800 shadow-md">
       {/* Logo */}
       <img
         src={logo}
@@ -25,7 +25,7 @@ export default function Header() {
 
       {/* Mobile button */}
       <button
-        className="md:hidden text-2xl p-2 focus:outline-none"
+        className="md:hidden text-2xl p-2 text-MG-700 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <HiX /> : <HiMenu />}
@@ -33,7 +33,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <nav className="absolute top-full right-0 w-3/4 bg-white shadow-lg md:hidden">
+        <nav className="absolute top-full right-0 w-3/4 bg-MG-50 border border-MG-200 shadow-lg md:hidden">
           <ul className="flex flex-col space-y-2 p-4">
             {['/', '/about', '/preview', '/forEducators', '/forParents', '/contact'].map((path, i) => {
               const texts = ['Home','About','Preview','Educators','Parents','Contact'];
