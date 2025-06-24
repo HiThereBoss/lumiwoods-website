@@ -7,7 +7,7 @@ import P5 from '../assets/images/HD5.jpg'
 import P6 from '../assets/images/HD6.jpg'
 import P7 from '../assets/images/HD7.jpg'
 import P8 from '../assets/images/HD8.jpg'
-import GamePreviewCarousel from './GamePreviewCarousel'
+import GamePreviewCarousel from './Carousel'
 
 const images = [
     P1, P2, P3, P4, P5, P6, P7, P8
