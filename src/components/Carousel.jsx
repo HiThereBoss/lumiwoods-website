@@ -18,11 +18,13 @@ export default function GamePreviewCarousel({ images }) {
         >
             {images.map((imgSrc, index) => (
             <SwiperSlide key={index}>
-                <img
-                src={imgSrc}
-                alt={`Game concept ${index + 1}`}
-                className="w-full h-auto object-contain rounded-xl shadow-md"
-                />
+                <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
+                    <img
+                        src={imgSrc}
+                        alt={`Game concept ${index + 1}`}
+                        className="max-h-full max-w-full object-contain rounded-xl shadow-md"
+                    />
+                </div>
             </SwiperSlide>
             ))}
         </Swiper>

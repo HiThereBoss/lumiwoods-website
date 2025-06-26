@@ -44,7 +44,7 @@ export default function ForEducators() {
                         href={res.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block p-6 bg-MG-50 border border-MG-200 rounded-xl shadow-md hover:shadow-lg transition-shadow hover:border-MG-400"
+                        className="block p-6 bg-mint-100 border border-MG-200 rounded-xl shadow-md hover:shadow-lg transition-shadow hover:border-MG-400"
                     >
                         <h2 className="text-2xl text-MG-700 group-hover:text-MG-800 font-semibold mb-2">{res.title}</h2>
                         <p className="text-MG-600 leading-relaxed">{res.description}</p>

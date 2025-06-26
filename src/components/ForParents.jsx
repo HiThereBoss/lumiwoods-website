@@ -44,7 +44,7 @@ export default function ParentsPortal() {
                 href={res.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-white border border-MG-200 rounded-xl shadow-md hover:shadow-lg transition-shadow hover:border-MG-400"
+                className="block bg-peach-100 border border-MG-200 rounded-xl shadow-md hover:shadow-lg transition-shadow hover:border-MG-400"
             >
                 <div className="p-6">
                 <h2 className="text-2xl text-MG-700 font-semibold mb-2">{res.title}</h2>

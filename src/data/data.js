@@ -9,10 +9,6 @@ export const profiles = [
     bio: "I'm Emre Bozkurt, a Computer Science student at McMaster University, and I am the Chief Technical Officer of Lumiwoods. I am in charge of developing the game- Lumiwoods, and our website. I truly believe in enjoying the work that you do- and putting my skills to use to help kids on a global scale is a genuine motivating factor, no matter the challenges I may face throughout the process."
   },
   {
-    name: "Yashasvi Seth",
-    bio: "Hi, I’m Yashasvi Seth — a Computer Science student at McMaster University and the Chief Operating Officer of Lumiwoods. I joined Lumiwoods because I’m passionate about using technology and creativity to make a positive impact on children’s mental well-being. With more kids experiencing stress from a young age, I believe it’s crucial to equip them with the tools to understand and manage their emotions early on — and Lumiwoods does just that in a fun and engaging way."
-  },
-  {
     name: "Tasneem Kanchwala",
     bio: "Hi, I'm Tasneem Kanchwala, a Life Sciences student at McMaster University."
   },
