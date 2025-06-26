@@ -31,10 +31,10 @@ const resources = [
 export default function ForEducators() {
     return (
         <div className="pt-12 px-6 pb-12 max-w-6xl mx-auto">
-            <h1 className="text-4xl font-bold text-center text-MG-800 mb-6">
+            <h1 className="text-4xl font-bold text-center text-[#1F2937] mb-6">
                 Resources for Educators
             </h1>
-            <p className="text-center text-MG-600 text-lg mb-10">
+            <p className="text-center text-[#4B5563] text-lg mb-10">
                 Curated sources to help teachers integrate Lumiwoods into their classroom.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -44,10 +44,10 @@ export default function ForEducators() {
                         href={res.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block p-6 bg-mint-100 border border-MG-200 rounded-xl shadow-md hover:shadow-lg transition-shadow hover:border-MG-400"
+                        className="block p-6 bg-[#D7F9ED] border border-MG-200 rounded-xl shadow-md hover:shadow-lg hover:border-MG-400 hover:scale-[1.02] transition-all duration-300"
                     >
-                        <h2 className="text-2xl text-MG-700 group-hover:text-MG-800 font-semibold mb-2">{res.title}</h2>
-                        <p className="text-MG-600 leading-relaxed">{res.description}</p>
+                        <h2 className="text-2xl text-[#1F2937] group-hover:text-MG-800 font-semibold mb-2">{res.title}</h2>
+                        <p className="text-[#1F2937] leading-relaxed">{res.description}</p>
                     </a>
                 ))}
             </div>
