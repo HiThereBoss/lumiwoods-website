@@ -30,7 +30,7 @@ const parentResources = [
 
 export default function ParentsPortal() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-[#f6f4fa] via-[#D7F9ED] to-[#EDEBFA] px-6 pb-20 pt-16 max-w-7xl mx-auto">
+        <div className="min-h-screen min-w-screen bg-gradient-to-br from-[#f6f4fa] via-[#D7F9ED] to-[#EDEBFA] px-6 pb-20 pt-16 max-w-7xl mx-auto">
         <h1 className="text-4xl font-extrabold text-center text-[#3b2f2f] mb-4">
             Quick Start Guide for Parents
         </h1>
