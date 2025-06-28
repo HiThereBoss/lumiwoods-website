@@ -30,11 +30,11 @@ const resources = [
 
 export default function ForEducators() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-[#D7F9ED] to-[#EDEBFA] px-6 pb-20 pt-16 max-w-7xl mx-auto">
-        <h1 className="text-4xl font-extrabold text-center text-[#1F2937] mb-4">
+        <div className="min-h-screen bg-gradient-to-br from-[#f6f4fa] via-[#D7F9ED] to-[#EDEBFA] px-6 pb-20 pt-16 max-w-7xl mx-auto">
+        <h1 className="text-4xl font-extrabold text-center text-[#3b2f2f] mb-4">
             Resources for Educators
         </h1>
-        <p className="text-center text-[#374151] text-lg mb-10">
+        <p className="text-center text-[#3b2f2f] text-lg mb-10">
             Curated sources to help teachers integrate Lumiwoods into their classroom.
         </p>
 
@@ -45,19 +45,19 @@ export default function ForEducators() {
             href={res.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-transparent"
+            className="block p-6 rounded-xl border transition-all duration-300 shadow-md hover:shadow-[0_10px_25px_rgba(255,192,203,0.3)] hover:scale-[1.03]"
             style={{
-                background: "linear-gradient(135deg, #D7F9ED, #E0C3FC)",
+                background: "linear-gradient(135deg, #ffe9d0 0%, #fbe7f0 100%)",
                 backgroundSize: "200% 200%",
-                backgroundPosition: "left center",
+                backgroundPosition: "center",
+                border: "1px solid rgba(0,0,0,0.05)",
+                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.05)",
             }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundPosition = "right center"}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundPosition = "left center"}
             >
-            <h2 className="text-2xl font-semibold text-[#1F2937] mb-2">
+            <h2 className="text-2xl font-semibold text-[#2c3e50] mb-2">
                 {res.title}
             </h2>
-            <p className="text-[#1F2937] leading-relaxed">
+            <p className="text-[#2c3e50] leading-relaxed">
                 {res.description}
             </p>
             </a>

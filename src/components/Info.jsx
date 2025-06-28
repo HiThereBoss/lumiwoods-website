@@ -1,4 +1,4 @@
-import { infoCards } from "@/data/data"
+import { infoCards } from "../data/data"
 import { motion } from "framer-motion"
 import React from 'react'
 
@@ -10,7 +10,13 @@ export default function Info() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.2 }}
-            className="bg-peach-100 border border-MG-200 shadow-md rounded-2xl p-6 text-center transition-all hover:shadow-lg"
+            className="border border-MG-200 rounded-2xl p-6 text-center transition-all duration-300 shadow-md hover:shadow-[0_10px_25px_rgba(255,192,203,0.3)] hover:scale-[1.03]"
+            style={{
+                background: "linear-gradient(135deg, #ffe9d0 0%, #fbe7f0 100%)",
+                backgroundSize: "200% 200%",
+                backgroundPosition: "center",
+                border: "1px solid rgba(0,0,0,0.05)",
+                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.05)",}}
         >
         {
             emoji ? (
