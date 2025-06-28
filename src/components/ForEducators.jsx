@@ -30,27 +30,39 @@ const resources = [
 
 export default function ForEducators() {
     return (
-        <div className="pt-12 px-6 pb-12 max-w-6xl mx-auto">
-            <h1 className="text-4xl font-bold text-center text-[#1F2937] mb-6">
-                Resources for Educators
-            </h1>
-            <p className="text-center text-[#4B5563] text-lg mb-10">
-                Curated sources to help teachers integrate Lumiwoods into their classroom.
+        <div className="min-h-screen bg-gradient-to-br from-[#D7F9ED] to-[#EDEBFA] px-6 pb-20 pt-16 max-w-7xl mx-auto">
+        <h1 className="text-4xl font-extrabold text-center text-[#1F2937] mb-4">
+            Resources for Educators
+        </h1>
+        <p className="text-center text-[#374151] text-lg mb-10">
+            Curated sources to help teachers integrate Lumiwoods into their classroom.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {resources.map((res, index) => (
+            <a
+            key={res.title}
+            href={res.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-transparent"
+            style={{
+                background: "linear-gradient(135deg, #D7F9ED, #E0C3FC)",
+                backgroundSize: "200% 200%",
+                backgroundPosition: "left center",
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundPosition = "right center"}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundPosition = "left center"}
+            >
+            <h2 className="text-2xl font-semibold text-[#1F2937] mb-2">
+                {res.title}
+            </h2>
+            <p className="text-[#1F2937] leading-relaxed">
+                {res.description}
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {resources.map((res) => (
-                    <a
-                        key={res.title}
-                        href={res.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block p-6 bg-[#D7F9ED] border border-MG-200 rounded-xl shadow-md hover:shadow-lg hover:border-MG-400 hover:scale-[1.02] transition-all duration-300"
-                    >
-                        <h2 className="text-2xl text-[#1F2937] group-hover:text-MG-800 font-semibold mb-2">{res.title}</h2>
-                        <p className="text-[#1F2937] leading-relaxed">{res.description}</p>
-                    </a>
-                ))}
-            </div>
+            </a>
+            ))}
+        </div>
         </div>
     );
 }
