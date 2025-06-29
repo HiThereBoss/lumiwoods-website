@@ -10,7 +10,7 @@ export const profiles = [
   },
   {
     name: "Tasneem Kanchwala",
-    bio: "Hi, I'm Tasneem Kanchwala, a Life Sciences student at McMaster University."
+    bio: "Hi! I’m Tasneem Kanchwalla—CS student at McMaster and COO & Lead of User Insights at Lumiwoods. We’re building an app that helps kids understand and regulate their emotions. I streamline ops, align mission with roadmaps, and squeeze max impact from limited resources. In research, I dig into family experiences to craft an intuitive, culturally resonant app. Off‑clock, I’m hiking, shredding on my guitar, or chilling with cats—the original mood masters."
   },
   {
     name: "Saahil Gupta",
