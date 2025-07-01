@@ -1,4 +1,3 @@
-import FAQ from "./FAQ"
 import Hero from "./Hero"
 import Info from "./Info"
 import Preview from "./Preview"
