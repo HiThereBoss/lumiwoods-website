@@ -1,3 +1,4 @@
+import saahilImage from '../assets/images/Saahil-linkedin.jpeg';
 
 export const profiles = [
   {
@@ -10,11 +11,12 @@ export const profiles = [
   },
   {
     name: "Tasneem Kanchwala",
-    bio: "Hi! I’m Tasneem Kanchwalla—CS student at McMaster and COO & Lead of User Insights at Lumiwoods. We’re building an app that helps kids understand and regulate their emotions. I streamline ops, align mission with roadmaps, and squeeze max impact from limited resources. In research, I dig into family experiences to craft an intuitive, culturally resonant app. Off‑clock, I’m hiking, shredding on my guitar, or chilling with cats—the original mood masters."
+    bio: "Hi, I'm Tasneem Kanchwala, a Life Sciences student at McMaster University."
   },
   {
     name: "Saahil Gupta",
-    bio: "Hi, my name's Saahil Gupta, and I'm also a Computer Science student at McMaster University. As the Design Lead for Lumiwoods, I focus on creating a visually appealing and user-friendly experience for our young users. I believe that design plays a crucial role in engaging children and making learning about mindfulness and emotional intelligence enjoyable. My goal is to ensure that Lumiwoods is not only educational but also fun and accessible for kids."
+    bio: "Hi, my name's Saahil Gupta, and I'm also a Computer Science student at McMaster University. As the Design Lead for Lumiwoods, I focus on creating a visually appealing and user-friendly experience for our young users. I believe that design plays a crucial role in engaging children and making learning about mindfulness and emotional intelligence enjoyable. My goal is to ensure that Lumiwoods is not only educational but also fun and accessible for kids.",
+    image: saahilImage,
   },
   {
     name: "Pratik Mahaveer Surana",

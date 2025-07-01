@@ -30,39 +30,33 @@ const resources = [
 
 export default function ForEducators() {
     return (
-        <div className="min-h-screen min-w-screen bg-gradient-to-br from-[#f6f4fa] via-[#D7F9ED] to-[#EDEBFA] px-6 pb-20 pt-16 max-w-7xl mx-auto">
-        <h1 className="text-4xl font-extrabold text-center text-[#3b2f2f] mb-4">
+        <div className="min-h-screen px-6 pb-20 pt-16 max-w-7xl mx-auto bg-parchment">
+        <h1 className="text-4xl font-extrabold text-center text-gamebrown mb-4">
             Resources for Educators
         </h1>
-        <p className="text-center text-[#3b2f2f] text-lg mb-10">
+        <p className="text-center text-forestgreen text-lg mb-10">
             Curated sources to help teachers integrate Lumiwoods into their classroom.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {resources.map((res, index) => (
+            {resources.map((res) => (
             <a
-            key={res.title}
-            href={res.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block p-6 rounded-xl border transition-all duration-300 shadow-md hover:shadow-[0_10px_25px_rgba(255,192,203,0.3)] hover:scale-[1.03]"
-            style={{
-                background: "linear-gradient(135deg, #ffe9d0 0%, #fbe7f0 100%)",
-                backgroundSize: "200% 200%",
-                backgroundPosition: "center",
-                border: "1px solid rgba(0,0,0,0.05)",
-                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.05)",
-            }}
+                key={res.title}
+                href={res.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-6 rounded-xl transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.03] bg-[#FFF9F2] border border-[#E3D6C5] hover:border-[#BFA58A]"
             >
-            <h2 className="text-2xl font-semibold text-[#2c3e50] mb-2">
+                <h2 className="text-2xl font-semibold text-forestgreen mb-2">
                 {res.title}
-            </h2>
-            <p className="text-[#2c3e50] leading-relaxed">
+                </h2>
+                <p className="text-gamebrown leading-relaxed">
                 {res.description}
-            </p>
+                </p>
             </a>
             ))}
         </div>
         </div>
     );
 }
+

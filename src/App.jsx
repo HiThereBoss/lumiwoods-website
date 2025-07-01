@@ -10,7 +10,7 @@ import ParentsPortal from './components/ForParents'
 export default function App() {
 
   return (
-    <div className='flex flex-col bg-gradient-to-r bg-MG-100'>
+    <div className='flex flex-col bg-gradient-to-r bg-parchment'>
     <Header />
       <div className='w-full'>
         <Routes>

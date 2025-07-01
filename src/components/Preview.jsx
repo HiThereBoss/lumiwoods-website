@@ -15,16 +15,16 @@ const images = [
 
 export default function Preview() {
     return (
-        <div className="flex flex-col justify-center p-6 min-h-[80vh] bg-MG-50">
-        <div className="max-w-5xl mx-auto text-center">
-            <h3 className="text-MG-700 font-extrabold text-[30px] lg:text-[50px] font-main-bold pt-8 mt-2">
-            Game Preview
-            </h3>
-            <p className="text-MG-600 text-[20px] lg:text-[30px] font-main mb-6">
-            Here's a sneak peek of what we're building!
-            </p>
-        </div>
-        <GamePreviewCarousel images={images} />
+        <div className="flex flex-col justify-center p-6 min-h-[80vh] bg-parchment">
+            <div className="max-w-5xl mx-auto text-center">
+                <h3 className="text-gamebrown font-extrabold text-[30px] lg:text-[50px] font-main-bold pt-8 mt-2">
+                    Game Preview
+                </h3>
+                <p className="text-forestgreen text-[20px] lg:text-[30px] font-main mb-6">
+                    Here's a sneak peek of what we're building!
+                </p>
+            </div>
+            <GamePreviewCarousel images={images} />
         </div>
     )
 }
