@@ -1,6 +1,8 @@
+import FAQ from "./FAQ"
 import Hero from "./Hero"
 import Info from "./Info"
 import Preview from "./Preview"
+import FAQ from "./FAQ"
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
       <Hero />
       <Info />
       <div className="mt-12"><Preview /></div>
+      <FAQ />
       <div className="flex justify-center items-center">
         <p className="text-MG-700 text-[15px] lg:text-[20px] font-main py-6">
           © 2025 Lumiwoods. All rights reserved.

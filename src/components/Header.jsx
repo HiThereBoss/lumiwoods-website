@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/images/logo.png';
 import NavLink from './NavLink.jsx';
 import { HiMenu, HiX } from 'react-icons/hi';
@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="relative w-full h-[10vh] flex items-center justify-between px-4 bg-MG-100 text-MG-800 shadow-md">
+    <header className="relative z-50 w-full h-[10vh] flex items-center justify-between px-4 bg-white shadow-md">
       {/* Logo */}
       <img
         src={logo}
@@ -15,34 +15,34 @@ export default function Header() {
         className="w-12 h-12 object-contain"
       />
 
-      {/* Desktop nav */}
+      {/* Desktop navigation */}
       <nav className="hidden md:flex space-x-4">
-        {['/', '/about', '/preview', '/forEducators', '/forParents', '/contact'].map((path, i) => {
-          const texts = ['Home','About','Preview','Educators','Parents','Contact'];
-          return <NavLink key={path} to={path} text={texts[i]} />;
-        })}
+        <NavLink to="/" text="Home" />
+        <NavLink to="/about" text="About" />
+        <NavLink to="/preview" text="Preview" />
+        <NavLink to="/forEducators" text="For Educators" />
+        <NavLink to="/forParents" text="For Parents" />
+        <NavLink to="/contact" text="Contact" />
       </nav>
 
-      {/* Mobile button */}
+      {/* Mobile menu toggle button */}
       <button
-        className="md:hidden text-2xl p-2 text-MG-700 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
+        className="md:hidden text-2xl p-2 focus:outline-none"
       >
         {isOpen ? <HiX /> : <HiMenu />}
       </button>
 
-      {/* Mobile menu */}
+      {/* Mobile dropdown menu */}
       {isOpen && (
-        <nav className="absolute top-full right-0 w-3/4 bg-MG-50 border border-MG-200 shadow-lg md:hidden">
-          <ul className="flex flex-col space-y-2 p-4">
-            {['/', '/about', '/preview', '/forEducators', '/forParents', '/contact'].map((path, i) => {
-              const texts = ['Home','About','Preview','Educators','Parents','Contact'];
-              return (
-                <li key={path} onClick={() => setIsOpen(false)}>
-                  <NavLink to={path} text={texts[i]} />
-                </li>
-              );
-            })}
+        <nav className="absolute top-full right-0 w-3/4 bg-white shadow-lg md:hidden z-50">
+          <ul className="flex flex-col p-4 space-y-2">
+            <li onClick={() => setIsOpen(false)}><NavLink to="/" text="Home" /></li>
+            <li onClick={() => setIsOpen(false)}><NavLink to="/about" text="About" /></li>
+            <li onClick={() => setIsOpen(false)}><NavLink to="/preview" text="Preview" /></li>
+            <li onClick={() => setIsOpen(false)}><NavLink to="/forEducators" text="For Educators" /></li>
+            <li onClick={() => setIsOpen(false)}><NavLink to="/forParents" text="For Parents" /></li>
+            <li onClick={() => setIsOpen(false)}><NavLink to="/contact" text="Contact" /></li>
           </ul>
         </nav>
       )}
